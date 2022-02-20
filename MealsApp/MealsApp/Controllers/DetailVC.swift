@@ -23,13 +23,14 @@ class DetailVC: UIViewController {
 
         setupFood()
     }
+
     @IBAction func goReviews() {
     }
 
     private func setupFood() {
         guard let foodIndex = foodIndex else {
             return }
-        buttonRvs.setTitle("Посмотреть (\(DataM.shared.foods[foodIndex ].ratingArray.count)) отзывов", for: .normal)
+        buttonRvs.setTitle("Посмотреть (\(DataM.shared.foods[foodIndex].ratingArray.count)) отзывов", for: .normal)
         priceLbl.text = String(currentFood.price) + " BYN"
         imageDetail.image = currentFood.image
         nameLbl.text = currentFood.name
@@ -44,11 +45,8 @@ class DetailVC: UIViewController {
         }
     }
 
-
-
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "GoCreateVC" {
             guard let destination = segue.destination as? CreaeteReviewsVC else { return }

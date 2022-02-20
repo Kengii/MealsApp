@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48ACF59335DE1CC2CB570727 /* Pods_MealsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405D27507BD196C4EABDBE2E /* Pods_MealsApp.framework */; };
 		7F0F42E827BD2CFB0081E936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F42E727BD2CFB0081E936 /* AppDelegate.swift */; };
 		7F0F42EA27BD2CFB0081E936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F42E927BD2CFB0081E936 /* SceneDelegate.swift */; };
 		7F0F42EF27BD2CFB0081E936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F42ED27BD2CFB0081E936 /* Main.storyboard */; };
@@ -20,12 +19,11 @@
 		7F0F430927BD34DA0081E936 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F430827BD34DA0081E936 /* Food.swift */; };
 		7F0F430F27BD39C70081E936 /* DataM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F430E27BD39C70081E936 /* DataM.swift */; };
 		7F0F431127BD4F550081E936 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F431027BD4F550081E936 /* CustomTVC.swift */; };
+		7FA784D427C1496000871C5D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA784D327C1496000871C5D /* CollectionViewCell.swift */; };
+		7FB09B0827C0CF9800B78931 /* MainCustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB09B0727C0CF9800B78931 /* MainCustomTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19DD6D4B8C27464A2BFD421B /* Pods-MealsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealsApp.release.xcconfig"; path = "Target Support Files/Pods-MealsApp/Pods-MealsApp.release.xcconfig"; sourceTree = "<group>"; };
-		405D27507BD196C4EABDBE2E /* Pods_MealsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AB6040D17F3498CF5DB5CB8 /* Pods-MealsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealsApp.debug.xcconfig"; path = "Target Support Files/Pods-MealsApp/Pods-MealsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0F42E427BD2CFB0081E936 /* MealsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0F42E727BD2CFB0081E936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F0F42E927BD2CFB0081E936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		7F0F430827BD34DA0081E936 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		7F0F430E27BD39C70081E936 /* DataM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataM.swift; sourceTree = "<group>"; };
 		7F0F431027BD4F550081E936 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
+		7FA784D327C1496000871C5D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		7FB09B0727C0CF9800B78931 /* MainCustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,28 +47,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48ACF59335DE1CC2CB570727 /* Pods_MealsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		006297E28DC1EE851C3CAC54 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				405D27507BD196C4EABDBE2E /* Pods_MealsApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7F0F42DB27BD2CFB0081E936 = {
 			isa = PBXGroup;
 			children = (
 				7F0F42E627BD2CFB0081E936 /* MealsApp */,
 				7F0F42E527BD2CFB0081E936 /* Products */,
-				F4B717AAEB87107B0846B0F2 /* Pods */,
-				006297E28DC1EE851C3CAC54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +125,8 @@
 			children = (
 				7F0F430827BD34DA0081E936 /* Food.swift */,
 				7F0F431027BD4F550081E936 /* CustomTVC.swift */,
+				7FB09B0727C0CF9800B78931 /* MainCustomTVC.swift */,
+				7FA784D327C1496000871C5D /* CollectionViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,15 +140,6 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
-		F4B717AAEB87107B0846B0F2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4AB6040D17F3498CF5DB5CB8 /* Pods-MealsApp.debug.xcconfig */,
-				19DD6D4B8C27464A2BFD421B /* Pods-MealsApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,11 +147,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F0F42F827BD2CFC0081E936 /* Build configuration list for PBXNativeTarget "MealsApp" */;
 			buildPhases = (
-				FBD5105E6C425E14D76BC4BB /* [CP] Check Pods Manifest.lock */,
 				7F0F42E027BD2CFB0081E936 /* Sources */,
 				7F0F42E127BD2CFB0081E936 /* Frameworks */,
 				7F0F42E227BD2CFB0081E936 /* Resources */,
-				8D9916ADBFC58161AB1C7CB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,48 +206,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8D9916ADBFC58161AB1C7CB1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MealsApp/Pods-MealsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MealsApp/Pods-MealsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MealsApp/Pods-MealsApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBD5105E6C425E14D76BC4BB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MealsApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7F0F42E027BD2CFB0081E936 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +213,7 @@
 			files = (
 				7F0F430227BD318C0081E936 /* DetailVC.swift in Sources */,
 				7F0F430427BD31C40081E936 /* CreaeteReviewsVC.swift in Sources */,
+				7FB09B0827C0CF9800B78931 /* MainCustomTVC.swift in Sources */,
 				7F0F431127BD4F550081E936 /* CustomTVC.swift in Sources */,
 				7F0F430627BD31F00081E936 /* ReviewsVC.swift in Sources */,
 				7F0F42E827BD2CFB0081E936 /* AppDelegate.swift in Sources */,
@@ -282,6 +221,7 @@
 				7F0F42EA27BD2CFB0081E936 /* SceneDelegate.swift in Sources */,
 				7F0F430F27BD39C70081E936 /* DataM.swift in Sources */,
 				7F0F430927BD34DA0081E936 /* Food.swift in Sources */,
+				7FA784D427C1496000871C5D /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +365,6 @@
 		};
 		7F0F42F927BD2CFC0081E936 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AB6040D17F3498CF5DB5CB8 /* Pods-MealsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -437,6 +376,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,13 +388,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7F0F42FA27BD2CFC0081E936 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19DD6D4B8C27464A2BFD421B /* Pods-MealsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +405,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,7 +417,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

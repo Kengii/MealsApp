@@ -14,11 +14,10 @@ class MainTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -35,18 +34,20 @@ class MainTableVC: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let defaultCell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MainCustomTVC else { return defaultCell }
         let eat = DataM.shared.foods[indexPath.row]
-        cell.textLabel?.text = eat.name
-        cell.imageView?.image = eat.image
-        cell.detailTextLabel?.text = String(eat.price)
+        cell.nameLbl.text = eat.name
+        cell.imageV.image = eat.image
+        cell.priceLbl.text = String(eat.price) + "BYN"
+        cell.ratingLbl?.text = eat.ratingStar
 
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-             return 80
-         }
+        return 100
+    }
 
 
 
@@ -59,7 +60,7 @@ class MainTableVC: UITableViewController {
         detailVC.currentFood = DataM.shared.foods[indexPath.row]
         detailVC.navigationItem.title = DataM.shared.foods[indexPath.row].name
         detailVC.foodIndex = indexPath.row
-        
+
 
     }
 }
